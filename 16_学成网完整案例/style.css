@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+    /* height: 4500px */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 195px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #0099ff;
+    color: #0099ff;
+}
+
+.serch {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 50px;
+}
+
+.text {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #0099ff;
+    border-right: none;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.serch button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0px;
+    background: url(images/serch_button.png) center top;
+}
+
+.user {
+    float: right;
+    height: 42px;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 30px;
+}
+
+.user img {
+    position: relative;
+    top: 6px;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 420px;
+    background: url(images/banner2.png) no-repeat top;
+}
+
+.banner .w .subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner .w .subnav ul li a {
+    display: block;
+    /* 这里的宽高不写也没事，因为最大不会超过subnav的宽 */
+    /* width: 170px;
+    height: 46px; */
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 46px;
+    padding-left: 20px;
+}
+
+.banner .w .subnav ul li a:hover {
+    color: #00b4ff;
+}
+
+.banner .w .subnav ul li a span {
+    float: right;
+    margin-right: 21px;
+}
+
+.banner .w .course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+.banner .w .course .hd {
+    height: 48px;
+    background-color: #9bceea;
+    color: #ffffff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner .w .course .bd {
+    padding: 0 20px;
+}
+
+.banner .w .course div ul li a {
+    display: block;
+    border-bottom: 2px solid #efefef;
+    padding: 13px 0px;
+}
+
+.banner .w .course div ul li .last_a {
+    border-bottom: none;
+}
+
+/* 指针悬停功能 */
+.banner .w .course div ul li a:hover {
+    color: #00a4ff;
+}
+
+
+
+
+
+.banner .w .course div ul li a h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+.banner .w .course div ul li a p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+
+.banner .w .course .ft {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 7px auto;
+    border: 1px solid #00a4ff;
+
+}
+
+.banner .w .course .ft h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #00a4ff;
+}
+
+.goods {
+    height: 60px;
+    margin-top: 8px;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    line-height: 60px;
+}
+
+.goods h3 {
+    float: left;
+    margin: 0 32px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul {
+    float: left;
+    height: 16px;
+    margin: 22px 0;
+}
+
+.goods ul li {
+    float: left;
+    border-left: 1px solid #bfbfbf;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 20px;
+    color: #050505;
+}
+
+.goods ul li:hover>a {
+    color: #00a4ff;
+}
+
+.mod {
+    float: right;
+    color: #00a4ff;
+    margin-right: 15px;
+}
+
+/* 盒子头部hd================================================== */
+.box .box-hd {
+    margin: 20px 0;
+    height: 40px;
+}
+
+.box .box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    line-height: 40px;
+}
+
+.box .box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 18px 0 10px;
+    margin-right: 18px;
+}
+
+/* 盒子头部hd结束================================================ */
+.box .box-bd ul {
+    width: 1215px;
+}
+
+/* 大盒子bd =====================================================*/
+.box .box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 15px 15px 0;
+}
+
+.box .box-bd ul li:hover {
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, .3);
+}
+
+.box .box-bd ul li a .hot {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.box .box-bd ul li a>img {
+    width: 100%;
+}
+
+.box .box-bd ul li a h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #050505;
+    margin: 25px 20px 20px 22px;
+}
+
+.box .box-bd ul li a p {
+    font-size: 12px;
+    color: #999999;
+    margin: 20px 0 27px 22px;
+}
+
+.box .box-bd ul li a p span {
+    color: #ff7c2d;
+}
+
+/* 大盒子bd结束=================================================== */
+
+/* 第二个大盒子开始================================================== */
+.box2 .box-hd {
+    margin: 20px 0;
+    height: 40px;
+}
+
+.box2 .box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    line-height: 40px;
+}
+
+.box2 .box-hd div {
+    float: center;
+    margin-left: 350px;
+}
+
+.box2 .box-hd .mid {
+    float: left;
+    font-size: 16px;
+    color: #868686;
+    margin-right: 70px;
+    padding: 14px 0 10px 0;
+}
+
+.box2 .box-hd .mid:hover {
+    color: #00a4ff;
+}
+
+.box2 .box-hd .last {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 18px 0 10px;
+    margin-right: 18px;
+}
+
+.box2 .box-bd {
+    width: 1215px;
+}
+
+
+.box2 .box-bd .left-img a {
+    float: left;
+    width: 228px;
+    height: 392px;
+    margin: 0 15px 15px 0;
+}
+
+.box2 .box-bd .top-img a {
+    float: left;
+    width: 957px;
+    height: 100px;
+    margin: 0 15px 22px 0;
+}
+
+.box2 .box-bd div a:hover {
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, .3);
+}
+
+.box2 .box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin: 0 15px 15px 0;
+}
+
+.box2 .box-bd ul li:hover {
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, .3);
+}
+
+.box2 .box-bd ul li a img {
+    width: 100%;
+}
+
+.box2 .box-bd ul li a h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #050505;
+    margin: 25px 20px 20px 22px;
+}
+
+.box2 .box-bd ul li a p {
+    font-size: 12px;
+    color: #999999;
+    margin: 20px 0 27px 22px;
+}
+
+.box2 .box-bd ul li a p span {
+    color: #ff7c2d;
+}
+
+/* 第二个大盒子结束================================================== */
+
+/* 牛人推荐 */
+.box .teachers ul {
+    width: 1215px;
+}
+
+.teachers ul li {
+    float: left;
+    margin: 0 15px 30px 0;
+}
+
+.teachers ul li a {
+    display: block;
+    width: 228px;
+    height: 320px;
+}
+
+.teachers ul li .special {
+    display: block;
+    width: 471px;
+    height: 320px;
+}
+
+.teachers ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer尾部栏==================== */
+.footer {
+    background-color: #fff;
+    height: 273px;
+}
+
+.footer div .copyright {
+    width: 440px;
+    float: left;
+    margin: 30px 0 0 20px;
+}
+
+.footer div .copyright img {
+    margin-bottom: 25px;
+}
+
+.footer div .copyright p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.footer div .copyright a {
+    display: block;
+    width: 118px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    margin-top: 15px;
+}
+
+.footer div .links {
+    float: right;
+    margin: 20px;
+}
+
+.footer div .links dl {
+    float: left;
+    margin: 0 0 0 80px;
+}
+
+.footer div .links dl dt {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.footer div .links dl dd {
+    font-size: 12px;
+    line-height: 21px;
+    color: #333333;
+}
