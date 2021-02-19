@@ -1,74 +1,228 @@
-/* 把我们所有标签的内外边距清零 */
-* {
-    margin: 0;
-    padding: 0;
-    /* css3盒子模型 */
-    box-sizing: border-box;
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
-/* em 和 i 斜体的文字不倾斜 */
-em,
-i {
-    font-style: normal
+.w {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-/* 去掉li 的小圆点 */
-li {
-    list-style: none
+.fl {
+    float: left;
 }
 
-img {
-    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
-    border: 0;
-    /* 取消图片底侧有空白缝隙的问题 */
-    vertical-align: middle
+.fr {
+    float: right;
 }
 
-button {
-    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
-    cursor: pointer
+/* 快捷导航栏制作 */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
 }
 
-a {
-    color: #666;
-    text-decoration: none
+.shortcut ul li {
+    float: left;
 }
 
-a:hover {
-    color: #c81623
+.shortcut .fr ul li:nth-child(2n) {
+    margin: 9px 14px 10px;
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
 }
 
-button,
-input {
-    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
-    /* 默认有灰色边框我们需要手动去掉 */
-    border: 0;
-    outline: none;
+.style_red {
+    color: #c81623;
 }
 
-body {
-    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
-    -webkit-font-smoothing: antialiased;
-    background-color: #fff;
-    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
-    color: #666
+.shortcut .fr ul .arrow-icon a::after {
+    content: "\e91e";
+    font-family: "icomoon";
+    margin-left: 5px;
 }
 
-.hide,
-.none {
-    display: none
+/* 头部制作 */
+.header {
+    position: relative;
+    height: 106px;
 }
 
-/* 清除浮动 */
-.clearfix:after {
-    visibility: hidden;
-    clear: both;
+.logo {
+    position: absolute;
+    top: 27px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
     display: block;
-    content: ".";
-    height: 0
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    /* text-indent: -9999px;
+    overflow: hidden; */
+    font-size: 0px;
 }
 
-.clearfix {
-    *zoom: 1
+/* 搜索栏模块 */
+.header .search {
+    position: absolute;
+    top: 27px;
+    left: 347px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.header .search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.header .search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #b1191a;
+}
+
+/* 热词模块 */
+.header .hotwords {
+    position: absolute;
+    top: 70px;
+    left: 346px;
+}
+
+.header .hotwords a {
+    margin: 0 10px;
+}
+
+/* 购物车模块 */
+.shopcar {
+    position: absolute;
+    top: 24px;
+    right: 64px;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+}
+
+.header .shopcar::before {
+    content: "\e93a";
+    color: #da5555;
+    font-family: "icomoon";
+    margin-right: 5px;
+}
+
+.header .shopcar::after {
+    content: "\e920";
+    font-family: "icomoon";
+    margin-left: 10px;
+}
+
+.header .shopcar .count {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+    background-color: #e60012;
+    padding: 0 3px;
+}
+
+/* nav导航栏 */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 209px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.nav .dropdown .dd {
+    width: 209px;
+    height: 465px;
+    background-color: #c81623;
+}
+
+.nav .dropdown .dd ul li {
+    height: 31px;
+    line-height: 31px;
+    background-color: #c81623;
+    margin-left: 2px;
+    padding-left: 12px;
+}
+
+.nav .dropdown .dd ul li:hover {
+    background-color: #ffffff;
+}
+
+.nav .dropdown .dd ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.nav .dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.nav .dropdown .dd ul li::after {
+    content: "\e920";
+    float: right;
+    margin-right: 11px;
+    font-family: icomoon;
+    color: #ffffff;
+}
+
+.nav .navitems {
+    float: left;
+    margin-left: 10px;
+}
+
+.nav .navitems ul li {
+    float: left;
+}
+
+.nav .navitems ul li a {
+    display: block;
+    padding: 0 20px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+    padding: 0 25px;
 }
