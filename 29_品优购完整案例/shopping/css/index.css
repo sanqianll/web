@@ -1,0 +1,162 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+.main .newsflash {
+    width: 250px;
+    height: 455px;
+}
+
+/* 轮播标签 */
+.main .focus .prov,
+.main .focus .next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-family: "icomoon";
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.main .focus .prov {
+    left: 0px;
+    border-radius: 0 50% 50% 0;
+}
+
+.main .focus .prov:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main .focus .next {
+    right: 0px;
+    border-radius: 50% 0 0 50%;
+}
+
+.main .focus .next:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main .focus .promo_nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+    width: 98px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.promo_nav ul li a {
+    float: left;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 3px;
+}
+
+.promo_nav ul li a:hover {
+    background-color: #e60012;
+}
+
+/* 新闻快报模块*/
+.main .news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+    margin-top: 1px;
+}
+
+.main .news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e8e8e7;
+    padding: 0 15px;
+}
+
+.main .news .news-hd h5 {
+    float: left;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-hd a {
+    float: right;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-hd a::after {
+    content: "\e920";
+    font-family: "icomoon";
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .news .news-bd {
+    padding: 5px 0 0 15px;
+}
+
+.main .news .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main .lifeservice {
+    width: 250px;
+    height: 209px;
+    border-left: 1px solid #e4e4e4;
+}
+
+.main .lifeservice ul li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    padding-top: 12px;
+}
+
+.main .lifeservice ul li:nth-child(4n) {
+    width: 63px;
+}
+
+.main .lifeservice ul li:nth-child(n+9) {
+    height: 69px;
+}
+
+.main .lifeservice ul li i {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    background: url(../images/icons.png);
+    background-position: -16px -15px;
+}
+/* 接下来需要对所有的图标试用精灵图，明天加油 */
+.main .bargain {
+    width: 250px;
+    height: 75px;
+    padding-top: 5px;
+}
