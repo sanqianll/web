@@ -45,7 +45,7 @@
     color: #c81623;
 }
 
-.shortcut .fr ul .arrow-icon::after {
+.shortcut .fr ul .arrow-icon a::after {
     content: "\e91e";
     font-family: "icomoon";
     margin-left: 5px;
@@ -171,9 +171,11 @@
     font-size: 16px;
     line-height: 45px;
     text-align: center;
+    margin-top: 2px;
 }
 
 .nav .dropdown .dd {
+    display: none;
     width: 209px;
     height: 465px;
     background-color: #c81623;
@@ -210,6 +212,7 @@
 
 .nav .navitems {
     float: left;
+    margin-left: 10px;
 }
 
 .nav .navitems ul li {
@@ -217,8 +220,64 @@
 }
 
 .nav .navitems ul li a {
+    display: block;
     padding: 0 20px;
-    font-size: 16px;
     height: 45px;
+    font-size: 16px;
     line-height: 45px;
+    padding: 0 25px;
+}
+
+
+/* 底部模块的制作 */
+.footer {
+    height: 417px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+/* 服务模块 */
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer .mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.footer .mod_service .service_txt h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat;
+    background-position: -252px -3px;
+    margin-right: 6px;
+}
+
+.footer .mod_service .service_txt h4 {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.footer .mod_service .service_txt p {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* 帮助模块 */
+.footer .mod_help{
+    height: 187px;
+    border-bottom: 1px solid #ededed;
+    padding-top: 21px;
+    padding-left: 52px;
+}
+.footer .mod_help dl dt{
+    font-size: 14px;
+    color: #333333;
 }
