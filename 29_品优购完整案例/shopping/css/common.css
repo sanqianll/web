@@ -271,13 +271,52 @@
 }
 
 /* 帮助模块 */
-.footer .mod_help{
+.footer .mod_help {
     height: 187px;
     border-bottom: 1px solid #ededed;
     padding-top: 21px;
     padding-left: 52px;
 }
-.footer .mod_help dl dt{
-    font-size: 14px;
+
+.footer .mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.footer .mod_help dl:last-child {
+    width: 100px;
+    text-align: center;
+}
+
+.footer .mod_help dl dt {
+    font-size: 16px;
     color: #333333;
+    margin-bottom: 12px;
+}
+
+.footer .mod_help dl dd a {
+    font-size: 12px;
+}
+
+.footer .mod_help dl dd img {
+    width: 95px;
+    height: 95px;
+}
+
+/* 版权模块 */
+.footer .mod_copyright {
+    text-align: center;
+}
+
+.footer .mod_copyright .links {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .mod_copyright .links a{
+    margin: 0 10px;
+}
+
+.footer .mod_copyright .copyright {
+    line-height: 20px;
 }
