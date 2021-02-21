@@ -152,11 +152,99 @@
     width: 25px;
     height: 30px;
     background: url(../images/icons.png);
+}
+
+.main .lifeservice ul li .icon_huafei {
     background-position: -16px -15px;
 }
-/* 接下来需要对所有的图标试用精灵图，明天加油 */
+
+.main .lifeservice ul li .icon_jipiao {
+    background-position: -79px -15px;
+}
+
+.main .lifeservice ul li .icon_dianyingpiao {
+    background-position: -140px -15px;
+}
+
+.main .lifeservice ul li .icon_youxi {
+    background-position: -204px -15px;
+}
+
+.main .lifeservice ul li .icon_caipiao {
+    background-position: -16px -88px;
+}
+
+.main .lifeservice ul li .icon_jiayouka {
+    background-position: -79px -88px;
+}
+
+.main .lifeservice ul li .icon_jiudian {
+    background-position: -140px -88px;
+}
+
+.main .lifeservice ul li .icon_huochepiao {
+    background-position: -205px -88px;
+}
+
+.main .lifeservice ul li .icon_zhongchou {
+    background-position: -16px -159px;
+}
+
+.main .lifeservice ul li .icon_licai {
+    background-position: -79px -159px;
+}
+
+.main .lifeservice ul li .icon_lipinka {
+    background-position: -140px -159px;
+}
+
+.main .lifeservice ul li .icon_baitiao {
+    background-position: -204px -159px;
+}
+.lifeservice .por{
+    position: relative;
+}
+/* 减价标签的第一种写法 */
+.lifeservice .jianjia{
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/down.png);
+}
+/* 减价标签的第二中方法 */
+.lifeservice .jianjia2::before{
+    position: absolute;
+    content: "减";
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+    background-color: #589d5a;
+}
+.lifeservice .jianjia2::after{
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0px;
+    border-top: none;
+    border-left: 6px solid #589d5a;
+    border-right: 6px solid #589d5a;
+    border-bottom: 3px solid white;
+}
 .main .bargain {
     width: 250px;
     height: 75px;
     padding-top: 5px;
+}
+
+/* 推荐模块 */
+.recom{
+    height: 163px;
+    background-color: skyblue;
+    margin-top: 11px;
 }
