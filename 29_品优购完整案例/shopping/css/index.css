@@ -355,3 +355,75 @@
     font-weight: 700;
     color: #df3033;
 }
+
+/* 家用电器模块 */
+.floor .box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 30px;
+}
+
+
+.box-hd h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.box-hd .tab_list ul li {
+    line-height: 30px;
+    float: left;
+}
+
+.box-hd .tab_list ul li a {
+    margin: 0 15px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+}
+
+.tab_list_item .col_210 {
+    width: 210px;
+    height: 361px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tab_list_item .col_210 ul {
+    padding-left: 12px;
+}
+
+.tab_list_item .col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #ededed;
+    margin-right: 10px;
+}
+
+.tab_list_item .col_329 {
+    width: 329px;
+    height: 361px;
+}
+
+.tab_list_item .col_221 {
+    width: 221px;
+    height: 361px;
+    border-right: 1px solid #ededed;
+}
+
+.tab_list_item .col_219 {
+    width: 219px;
+    height: 361px;
+}
+
+.bb {
+    display: block;
+    border-bottom: 1px solid #ededed;
+}
