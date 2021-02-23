@@ -1,3 +1,7 @@
+.nav {
+    overflow: hidden;
+}
+
 .sk {
     position: absolute;
     border-left: 1px solid #b1191a;
@@ -34,7 +38,81 @@
     padding: 0 20px;
 }
 
-.sk_con ul li:last-child a::after{
+.sk_con ul li:last-child a::after {
     content: "\e91e";
     font-family: "icomoon";
+}
+
+
+.sk_bd ul li {
+    width: 290px;
+    height: 460px;
+    float: left;
+    margin: 0 13px 10px 0;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0px;
+}
+
+.sk_bd ul li>div {
+    width: 290px;
+    height: 410px;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.sk_bd ul li .sk_container_img{
+    text-align: center;
+}
+.sk_bd ul li div p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    padding-left: 12px;
+}
+.sk_bd ul li div .price{
+    height: 48px;
+    line-height: 48px;
+    font-size: 22px;
+    color: #e60012;
+    padding-left: 12px;
+}
+.sk_bd ul li div .yuanjia{
+    font-size: 14px;
+    color: #a4a4a4;
+    margin-left: 8px;
+}
+.sk_bd ul li div .bar{
+    padding-left: 12px;
+}
+.sk_bd ul li div .bar i{
+    font-size: 14px;
+    float: left;
+}
+.sk_bd ul li div .bar .bar-out{
+    float: left;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #e12228;
+    border-radius: 6px;
+    margin: 5px 10px;
+}
+.sk_bd ul li div .bar .bar-in{
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+    border-radius: 6px 0 0 6px;
+}
+.sk_bd ul li a{
+    display: block;
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    background-color: #b1191a;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.sk_bd ul li:hover div{
+    border-color: #e12228;
 }
