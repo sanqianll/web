@@ -43,7 +43,9 @@
     font-family: "icomoon";
 }
 
-
+.sk_bd{
+    margin-top: 25px;
+}
 .sk_bd ul li {
     width: 290px;
     height: 460px;
