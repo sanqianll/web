@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.change {
+    width: 300px;
+    height: 200px;
+    background-color: skyblue;
+    border-radius: 15px;
+    border: 1px solid slateblue;
+    /* background: url(../images/1.jpg); */
+
+    /* transition: width .5s ease 0s,height .5s ease 0s; */
+    transition: all .5s ease 0s;
+    margin: 10px auto;
+}
+
+.change:hover {
+    width: 400px;
+    height: 300px;
+    background-color: springgreen;
+    /* background: url(../images/ABCD.png); */
+}
+
+.bar {
+    width: 300px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1px;
+    margin: 10px auto;
+}
+
+.bar>.bar_in {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(8, 187, 8);
+    border-radius: 15px;
+
+    transition: all 0.5s ease 0s;
+}
+
+.bar:hover .bar_in {
+    width: 100%;
+    background-color: red;
+}
+
+.work {
+    width: 380px;
+    height: 600px;
+    /* background-color: rgb(233, 252, 233); */
+    background-color: white;
+    margin: 10px auto;
+    padding: 0 20px 0 20px;
+}
+
+.work>.img {
+    width: 380px;
+    height: 350px;
+}
+
+.work>.img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.work>.desc {
+    font-size: 16px;
+    color: gray;
+    margin: 10px 0px;
+}
+
+.work>.price {
+    margin: 10px 0;
+}
+
+.work>.price>.tejia {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(233, 32, 32);
+}
+
+.work>.price>.yuanjia {
+    font-size: 16px;
+    font-weight: 700;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.work>.bar-phone {
+    height: 40px;
+    line-height: 40px;
+}
+
+.work>.bar-phone .red {
+    color: red;
+}
+
+.work>.bar-phone>.bar-out {
+    display: inline-block;
+    width: 200px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid red;
+    margin: 2px;
+    vertical-align: middle;
+}
+
+.work>.bar-phone>.bar-out>.bar-in {
+    width: 80%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background-color: rgb(255, 124, 47);
+}
+
+.work .buy {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(189, 39, 22);
+    line-height: 60px;
+}
+
+.work2 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6700;
+    background-image: url(images/logo_mi.png);
+    background-position: top left;
+    transition: all .2s;
+}
+.work2:hover{
+    background-position: top right;
+}
