@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    outline: none;
+}
+
+.dh {
+    width: 200px;
+    height: 200px;
+    background-color: springgreen;
+    animation-name: first;
+    animation-duration: 2s;
+}
+
+@keyframes first {
+    0% {
+        transform: translate(0px, 0PX);
+    }
+
+    25% {
+        transform: translate(400px, 0PX);
+    }
+
+    50% {
+        transform: translate(400px, 400PX);
+    }
+
+    75% {
+        transform: translate(0px, 400PX);
+    }
+
+    100% {
+        transform: translate(0px, 0PX);
+    }
+}
