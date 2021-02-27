@@ -17,14 +17,15 @@ input {
 }
 
 .dh {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: springgreen;
     animation-name: first;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-body{
+body {
     background-color: black;
     height: 3000px;
 }
@@ -35,15 +36,15 @@ body{
     }
 
     25% {
-        transform: translate(400px, 0PX);
+        transform: translate(300px, 0PX);
     }
 
     50% {
-        transform: translate(400px, 400PX);
+        transform: translate(300px, 300PX);
     }
 
     75% {
-        transform: translate(0px, 400PX);
+        transform: translate(0px, 300PX);
     }
 
     100% {
@@ -83,12 +84,99 @@ body{
     background-color: salmon;
     animation: move 3s ease 0s infinite alternate forwards;
 }
-.map{
+
+.map {
+    position: relative;
     width: 747px;
     height: 617px;
     background: url(images/map.png) no-repeat;
     margin: 10px auto;
 }
-.city{
-    
+
+.city {
+    position: absolute;
+    top: 227px;
+    left: 545px;
+}
+
+.taiwan {
+    top: 497px;
+    left: 660px;
+}
+
+.guangzhou {
+    top: 527px;
+    left: 545px;
+}
+
+.dotted {
+    width: 8px;
+    height: 8px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+
+@keyframes pulse {
+    0% {}
+
+    70% {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+
+    }
+
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}
+
+.city div[class^="pulse"] {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 10px rgb(106, 176, 245);
+    /* border: 1px solid rgb(106, 176, 245); */
+    border-radius: 50%;
+    animation: pulse 2.1s linear infinite;
+}
+
+.map .city .pulse1 {
+    animation-delay: 0s;
+}
+
+.map .city .pulse2 {
+    animation-delay: 0.7s;
+}
+
+.map .city .pulse3 {
+    animation-delay: 1.4s;
+}
+
+.long {
+    height: 80px;
+    font-size: 80px;
+    line-height: 80px;
+    background-color: chartreuse;
+    animation: longer 3s steps(9) 0s infinite alternate forwards;
+}
+
+@keyframes longer {
+    0% {
+        width: 0px;
+    }
+
+    80% {
+        width: 400px;
+    }
+
+    100% {
+        width: 400px;
+    }
 }
