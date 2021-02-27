@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes comein {
+    0% {
+        transform: translate(-100px, 0px);
+    }
+
+    100% {
+        transform: translate(880px, 0px);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -1400px 0px;
+    }
+}
+
+.bear {
+    width: 200px;
+    height: 100px;
+    animation: comein 3s ease-out 0s forwards;
+}
+
+.bear_move {
+    width: 200px;
+    height: 100px;
+    background: url(images/bear.png) no-repeat;
+    background-position: 0px 0px;
+    animation: move 0.5s steps(7) 0s infinite forwards;
+}
