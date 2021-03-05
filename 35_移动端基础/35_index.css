@@ -3,11 +3,42 @@
     padding: 0px;
 }
 
+body {
+    /* CSS3新型盒子 */
+    box-sizing: border-box;
+}
+
 li {
     list-style: none;
 }
 
 a {
-    color: black;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.input {
+    -webkit-appearance: none;
+}
+
+.a {
+    -webkit-touch-callout: none;
+}
+
+.img1,
+.img2 {
+    width: 100px;
+    height: 100px;
+    background: url(../images/1.jpg);
+}
+
+.img1 {
+    background-size: 100%;
+}
+
+.img2 {
+    background-size: 50%;
+}
+.img3{
+    width: ;
 }
