@@ -25,6 +25,17 @@ a {
     -webkit-touch-callout: none;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
 .img1,
 .img2 {
     width: 100px;
@@ -39,6 +50,35 @@ a {
 .img2 {
     background-size: 50%;
 }
-.img3{
+
+.img3 {
     width: ;
+}
+section{
+    width: 100%;
+    min-width: 800px;
+    max-width: 1500px;
+}
+section div:nth-child(1) {
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-color: skyblue;
+}
+
+section div:nth-child(2) {
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-color: springgreen;
+}
+.lan{
+    width: 100%;
+    height: 300px ;
+}
+.lan .box1{
+    float: left;
+    width: 20%;
+    height: 40px;
+    background-color: springgreen;
 }
