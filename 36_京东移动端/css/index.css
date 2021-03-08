@@ -117,7 +117,8 @@ ul {
     height: 15px;
     background-color: #ccc;
 }
-.sou{
+
+.sou {
     width: 18px;
     height: 15px;
     position: absolute;
@@ -135,6 +136,38 @@ ul {
     color: #fff;
 }
 
-.main-content .slider img{
+.main-content .slider img {
     width: 100%;
+    vertical-align: middle;
+}
+
+.brand {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.brand ul li {
+    float: left;
+    width: 33.33%;
+}
+
+.brand ul li img {
+    width: 100%;
+}
+
+.nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a img {
+    width: 40px;
+    margin: 10px 0 0 0;
+}
+
+.nav a p {
+    margin: 6px 0 0 0;
+    color: #666;
 }
