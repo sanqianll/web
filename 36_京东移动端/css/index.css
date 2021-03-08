@@ -7,9 +7,32 @@ body {
     font-family: -apple-system, Helvetica, sans-serif;
     color: #666;
     line-height: 1.5;
-    background-color: #ccc;
-    height: 3000px;
 }
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/*禁用长按页面时的弹出菜单*/
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+
+
+
 
 ul {
     list-style: none;
@@ -141,6 +164,7 @@ ul {
     vertical-align: middle;
 }
 
+/* 名牌部分 */
 .brand {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -155,6 +179,7 @@ ul {
     width: 100%;
 }
 
+/* 导航栏部分 */
 .nav a {
     float: left;
     width: 20%;
@@ -170,4 +195,23 @@ ul {
 .nav a p {
     margin: 6px 0 0 0;
     color: #666;
+}
+
+/* 新闻部分 */
+.news a {
+    box-sizing: border-box;
+    float: left;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+.news a img {
+    width: 100%;
 }
