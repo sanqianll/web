@@ -6,15 +6,16 @@
     /* justify-content: center; */
     /* justify-content: space-around; */
     justify-content: space-between;
-
+    align-content: space-around;
+    flex-wrap: wrap;
     width: 700px;
     height: 300px;
     background-color: skyblue;
 }
 
 .box1 span {
-    width: 40px;
-    /* height: 50px; */
+    width: 150px;
+    height: 80px;
     background-color: springgreen;
 }
 
