@@ -10,6 +10,11 @@ body {
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: #222;
@@ -96,7 +101,9 @@ ul {
     height: 64px;
     border-radius: 8px;
     background-color: #fff;
+    background: linear-gradient();
     margin: 3px 4px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
 }
 
 .local-nav li {
@@ -153,19 +160,30 @@ nav .nav-common {
     background-color: skyblue;
 }
 
-nav .nav-common:nth-child(2) {
-    margin: 3px 0;
+nav .nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
 }
 
-nav .nav-common .nav-items{
+nav .nav-common:nth-child(2) {
+    margin: 3px 0;
+    background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+
+nav .nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+
+nav .nav-common .nav-items {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-nav .nav-common .nav-items:nth-child(-n+2){
+
+nav .nav-common .nav-items:nth-child(-n+2) {
     border-right: 1px solid #fff;
 }
-nav .nav-common .nav-items a{
+
+nav .nav-common .nav-items a {
     flex: 1;
     text-align: center;
     line-height: 44px;
@@ -173,12 +191,152 @@ nav .nav-common .nav-items a{
     font-size: 14px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
 }
-nav .nav-common .nav-items:nth-child(1) a{
+
+nav .nav-common .nav-items:nth-child(1) a {
     background: url(../images/hotel.png) no-repeat bottom center;
     background-size: 121px;
 }
-nav .nav-common .nav-items:nth-child(n+2) a:nth-child(1){
+
+nav .nav-common .nav-items:nth-child(n+2) a:nth-child(1) {
     border-bottom: 1px solid #fff;
 }
 
+/* 另一个导航栏 */
+.subnav-entry {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    padding: 5px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+}
 
+.subnav-entry li {
+    flex: 20%;
+    margin: 3px 0;
+}
+
+.subnav-entry li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #222;
+}
+
+.subnav-entry li a .subnav-entry-icon {
+    width: 24px;
+    height: 24px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 24px;
+}
+
+.subnav-entry li:nth-child(1) a .subnav-entry-icon {
+    background-position: 0 0;
+}
+
+.subnav-entry li:nth-child(2) a .subnav-entry-icon {
+    background-position: 0 -25px;
+}
+
+.subnav-entry li:nth-child(3) a .subnav-entry-icon {
+    background-position: 0 -54px;
+}
+
+.subnav-entry li:nth-child(4) a .subnav-entry-icon {
+    background-position: 0 -275px;
+}
+
+.subnav-entry li:nth-child(5) a .subnav-entry-icon {
+    background-position: 0 -84px;
+}
+
+.subnav-entry li:nth-child(6) a .subnav-entry-icon {
+    background-position: 4px -139px;
+}
+
+.subnav-entry li:nth-child(7) a .subnav-entry-icon {
+    background-position: 0 -169px;
+}
+
+.subnav-entry li:nth-child(8) a .subnav-entry-icon {
+    background-position: 0 -110px;
+}
+
+.subnav-entry li:nth-child(9) a .subnav-entry-icon {
+    background-position: 0 -194px;
+}
+
+.subnav-entry li:nth-child(10) a .subnav-entry-icon {
+    background-position: 3px -245px;
+}
+
+/* 销售模块 */
+.sales-box {
+    margin: 5px 4px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+
+}
+
+.sales-box .sales-hd {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-box .sales-hd h3 {
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+.sales-box .sales-hd h3::after {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    content: "";
+    width: 79px;
+    height: 16px;
+    background: url(../images/hot.png) no-repeat 0 -19px;
+    background-size: 79px;
+}
+
+.sales-box .sales-hd .more {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    border-radius: 15px;
+    color: #fff;
+    /* font-size: 12px; */
+    padding: 3px 20px 3px 10px;
+    background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+}
+
+.sales-box .sales-hd .more::after {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+.sales-box .sales-bd .row{
+    display: flex;
+}
+.sales-box .sales-bd .row a {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+.sales-box .sales-bd .row a:nth-child(1) {
+    border-right: 1px solid #ddd;
+}
+
+.sales-box .sales-bd .row a img{
+    width: 100%;
+}
