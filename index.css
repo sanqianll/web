@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+.box .col{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+.box .col .items{
+    display: flex;
+    flex: 33.333%;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 50px;
+}
+/* .box .col .items:link{
+    background-color: skyblue;
+}
+.box .col .items:visited{
+    background-color: palegreen;
+} */

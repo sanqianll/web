@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打卡</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="col">
+            <a href="#" class="items"><span>1</span></a>
+            <a href="#" class="items"><span>2</span></a>
+            <a href="#" class="items"><span>3</span></a>
+        </div>
+        <div class="col">
+            <a href="#" class="items"><span>4</span></a>
+            <a href="#" class="items"><span>5</span></a>
+            <a href="#" class="items"><span>6</span></a>
+        </div>
+    </div>
+
+    <script>
+        var div0 = document.getElementsByTagName('a')[0];
+        //通过标签名称获得要素div
+        // div.style.width = '100px';
+        //div标签的样式的宽度	
+        // div.style.height = '100px';
+        //div标签的样式的高度
+        // div.style.backgroundColor = 'red';
+        //background-color中的-去掉否则会报错，并且color还要采用小驼峰
+        var num0 = 0;
+        div0.onclick = function () {
+            num0++;
+            if (num0 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+
+        };
+
+        var div1 = document.getElementsByTagName('a')[1];
+        var num1 = 0;
+        div1.onclick = function () {
+            num1++;
+            if (num1 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+
+        };
+
+        var div2 = document.getElementsByTagName('a')[2];
+        var num2 = 0;
+        div2.onclick = function () {
+            num2++;
+            if (num2 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+        };
+        var div3 = document.getElementsByTagName('a')[3];
+        var num3 = 0;
+        div3.onclick = function () {
+            num3++;
+            if (num3 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+        };
+        var div4 = document.getElementsByTagName('a')[4];
+        var num4 = 0;
+        div4.onclick = function () {
+            num4++;
+            if (num4 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+        };
+        var div5 = document.getElementsByTagName('a')[5];
+        var num5 = 0;
+        div5.onclick = function () {
+            num5++;
+            if (num5 % 2 == 0) {
+                this.style.backgroundColor = 'skyblue';
+            } else {
+                this.style.backgroundColor = 'springgreen';
+            }
+        };
+
+    </script>
+</body>
+
+</html>
