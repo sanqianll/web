@@ -54,3 +54,50 @@ body {
         line-height: (70rem / @baseFont);
     }
 }
+
+.banner {
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ad {
+    display: flex;
+
+    a {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    width: (750rem / @baseFont);
+
+    a {
+        float: left;
+        text-align: center;
+        width: (150rem / @baseFont);
+        height: (140rem / @baseFont);
+
+        img {
+            display: block;
+            width: (82rem / @baseFont);
+            height: (82rem / @baseFont);
+            margin: (10rem / @baseFont) auto 0 ;
+        }
+
+        span {
+            display: block;
+            font-size: (25rem / @baseFont);
+            color: #333;
+        }
+    }
+
+}
