@@ -17,14 +17,16 @@ body {
         font-size: 37.5px !important;
     }
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.wrap{
+.wrap {
     background-color: #fff;
     padding-bottom: 1.146667rem;
 }
+
 .header {
     font-size: .933333rem;
     height: 2.133333rem;
@@ -39,14 +41,16 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin:1.2rem 0 1.6rem ;
+    margin: 1.2rem 0 1.6rem;
+
     .items {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex: 33.33%;
-        &:nth-child(-n+3){
+
+        &:nth-child(-n+3) {
             margin-bottom: 1.653333rem;
         }
 
@@ -63,12 +67,128 @@ a{
     }
 }
 
-.go{
+.go {
     margin: 0 .586667rem 0 .16rem;
 }
 
-.content{
+.content {
     background-color: #fff;
     margin-top: .266667rem;
     padding: 1.066667rem .64rem;
+
+    .con-hd {
+        display: flex;
+        justify-content: space-between;
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        margin-bottom: .986667rem;
+
+
+        h4 {
+            margin: 0;
+            font-size: .88rem;
+            color: #333333;
+
+            span {
+                display: inline;
+                width: 1.013333rem;
+                height: 1.013333rem;
+                vertical-align: middle;
+            }
+        }
+
+        .more {
+            font-size: .586667rem;
+            color: #999999;
+        }
+    }
+}
+
+.get_job_focus {
+    position: relative;
+
+    .swiper-container {
+        // width: 100%;
+        width: 14.4rem;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: 0.4;
+
+        a {
+            width: 9.306667rem;
+            height: 10.213333rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            width: 8rem;
+            font-size: .666667rem;
+            color: #333333;
+            margin-top: .506667rem;
+        }
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 3;
+    }
+}
+
+.study {
+    .swiper-container {
+        padding: .266667rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        width: 7.733333rem;
+        height: 9.066667rem;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: .266667rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
 }
