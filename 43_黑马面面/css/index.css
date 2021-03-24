@@ -64,3 +64,101 @@ a {
   margin-top: 0.266667rem;
   padding: 1.066667rem 0.64rem;
 }
+.content .con-hd {
+  display: flex;
+  justify-content: space-between;
+  height: 1.013333rem;
+  line-height: 1.013333rem;
+  margin-bottom: 0.986667rem;
+}
+.content .con-hd h4 {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #333333;
+}
+.content .con-hd h4 span {
+  display: inline;
+  width: 1.013333rem;
+  height: 1.013333rem;
+  vertical-align: middle;
+}
+.content .con-hd .more {
+  font-size: 0.586667rem;
+  color: #999999;
+}
+.get_job_focus {
+  position: relative;
+}
+.get_job_focus .swiper-container {
+  width: 14.4rem;
+  height: 100%;
+}
+.get_job_focus .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+.get_job_focus .swiper-slide a {
+  width: 9.306667rem;
+  height: 10.213333rem;
+}
+.get_job_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.get_job_focus .swiper-slide p {
+  width: 8rem;
+  font-size: 0.666667rem;
+  color: #333333;
+  margin-top: 0.506667rem;
+}
+.get_job_focus .swiper-slide-active,
+.get_job_focus .swiper-slide-duplicate-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+.study .swiper-container {
+  padding: 0.266667rem;
+  width: 100%;
+  height: 100%;
+}
+.study .swiper-slide {
+  width: 7.733333rem;
+  height: 9.066667rem;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 0.266667rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
