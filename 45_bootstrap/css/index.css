@@ -1,0 +1,6 @@
+[class^= "col-lg"] {
+    border: 1px solid black;
+}
+.row2>div{
+    border: 1px solid red;
+}
