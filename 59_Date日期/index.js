@@ -19,4 +19,4 @@ function gettime() {
     s = s < 10 ? '0' + s : s;
     return h + ':' + m + ':' + s;
 }
-console.log(gettime());
+console.log(gettime()); 
