@@ -19,4 +19,18 @@ function gettime() {
     s = s < 10 ? '0' + s : s;
     return h + ':' + m + ':' + s;
 }
-console.log(gettime()); 
+console.log(gettime());
+
+//-----------------------------------------------
+//获得时间戳
+//1.第一种写法，直接用函数
+var now = new Date();
+console.log(now.getTime());
+console.log(now.valueOf());
+
+//2.第二种写法，使用 +new 快捷法
+var now2 = +new Date();
+console.log(now2);
+
+//3.第三种写法，直接调用 Date.now() 函数
+console.log(Date.now());
