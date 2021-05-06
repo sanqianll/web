@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_APIs</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="box1">
+        这是一个普普通通的盒子
+    </div>
+
+    <ul>
+        <li>第一个元素</li>
+        <li>第二个元素</li>
+        <li>第三个元素</li>
+    </ul>
+
+    <script>
+        var elm1 = document.getElementById("box1");
+        console.log(typeof elm1);
+        console.log(elm1);
+        console.dir(elm1);
+
+        var elm2 = document.getElementsByTagName('li');
+        for (var key in elm2) {
+            console.log(elm2[key]);
+        }
+        for (var i = 0; i < elm2.length; i++) {
+            console.log(elm2[i]);
+        }
+    </script>
+</body>
+
+</html>
