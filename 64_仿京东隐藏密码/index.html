@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东登录页</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <label for="">
+            <img src="images/close.png" alt="" id="eye">
+        </label>
+        <input type="password" name="" id="psw1">
+    </div>
+
+
+    <script>
+        var psw1 = document.querySelector('#psw1');
+        var eye = document.querySelector('#eye');
+        var flag = 0;
+        eye.onclick = function () {
+            if (flag == 0) {
+                psw1.type = "text";
+                eye.src = "images/open.png";
+                flag = 1;
+            } else {
+                psw1.type = "password";
+                eye.src = "images/close.png";
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

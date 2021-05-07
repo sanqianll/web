@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+    margin: 100px auto;
+}
+
+.box label img {
+    width: 24px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.box input {
+    width: 370px;
+    height: 30px;
+    border: 0px;
+    outline: none;
+}
