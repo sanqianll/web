@@ -5,43 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web_APIs</title>
-    <link rel="stylesheet" href="index.css">
+    <title>事件</title>
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div id="box1">
-        这是一个普普通通的盒子
+    <button id="bt1">一个普通的按钮</button>
+    <button id="bt2">第二个普通按钮</button>
+    <div id="div1">这是一个盒子</div>
+    <div id="div2">第二个盒子</div>
+    <button id="bt3">图片1</button>
+    <button id="bt4">图片2</button>
+    <img src="images/csgo1.png" alt="" title="M9刺刀" id="img1">
+    <div id="div3">
+        <span>上午好呀</span>
     </div>
+    <input type="button" value="提交" id="input1">
+    <input type="text" value="请输入文字" id="input2">
 
-    <ul>
-        <li>第一个元素</li>
-        <li>第二个元素</li>
-        <li>第三个元素</li>
-    </ul>
-    <ol>
-        <li>hahaha1</li>
-        <li>hahaha2</li>
-        <li>hahaha3</li>
-    </ol>
+
+
+
+
+
 
     <script>
-        var elm1 = document.getElementById("box1");
-        console.log(typeof elm1);
-        console.log(elm1);
-        console.dir(elm1);
-
-        var elm2 = document.getElementsByTagName('li');
-        for (var key in elm2) {
-            console.log(elm2[key]);
+        var btm1 = document.querySelector('#bt1');
+        btm1.onclick = function () {
+            alert('您按下了一个按钮鸭');
         }
-        for (var i = 0; i < elm2.length; i++) {
-            console.log(elm2[i]);
+        var btm2 = document.querySelector('#bt2');
+        var box1 = document.querySelector('#div1');
+        btm2.onclick = function () {
+            box1.innerHTML = '<strong>文本已经更改</strong';
         }
+        var box2 = document.querySelector('#div2');
+        box2.innerHTML = getday(); // 这个函数是在前面声明的
 
-        var elm2 = document.getElementsByTagName('ol');
-        console.log(elm2[0].getElementsByTagName('li'));
+        var bt3 = document.querySelector('#bt3');
+        var bt4 = document.querySelector('#bt4');
+        var img1 = document.querySelector('#img1');
+        bt3.onclick = function () {
+            img1.src = 'images/csgo1.png';
+            img1.title = 'M9刺刀'
+        }
+        bt4.onclick = function () {
+            img1.src = 'images/csgo2.png';
+            img1.title = '弯刀'
+        }
+        var div3 = document.querySelector('#div3');
+        if (jma() == 0) {
+            div3.innerHTML = '晚上好呀';
+        }
+        if (jma() == 1) {
+            div3.innerHTML = '上午好呀';
+        }
+        if (jma() == 2) {
+            div3.innerHTML = '下午好呀';
+        }
+        var input1 = document.querySelector('#input1');
+        var input2 = document.querySelector('#input2');
+        input1.onclick = function () {
+            this.disabled = true;
+        }
+        input2.onclick = function () {
+            input1.disabled = false;
+        }
     </script>
 </body>
 
