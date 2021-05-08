@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示隐藏文本框内容</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <input type="text" value="手机" id="search">
+
+    <script>
+        var search = document.querySelector('#search');
+        // var flag = 0;
+        search.onfocus = function () {
+            this.style.color = '#333';
+            if (this.value === '手机') {
+                this.value = '';
+            }
+        }
+        search.onblur = function () {
+            this.style.color = '#ccc';
+            if (this.value === '') {
+                this.value = '手机';
+            }
+        }
+    </script>
+</body>
+
+</html>
