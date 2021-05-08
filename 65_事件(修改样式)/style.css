@@ -1,0 +1,33 @@
+.div1 {
+    width: 300px;
+    height: 160px;
+    background-color: skyblue;
+}
+
+.box {
+    position: relative;
+    width: 80px;
+    text-align: center;
+    color: coral;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgb(236, 161, 134);
+    margin: 10px auto;
+}
+
+.box img {
+    width: 60px;
+
+}
+
+.box .btn-close {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    color: #999;
+    top: -1px;
+    left: -16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
