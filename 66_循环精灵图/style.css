@@ -1,0 +1,13 @@
+ul {
+  width: 136px;
+  height: 102px;
+}
+li {
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  background-color: pink;
+  list-style: none;
+  background: url(images/sprite.png) no-repeat;
+}
