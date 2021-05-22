@@ -31,98 +31,22 @@
         <input type="password" value="" class="ipt2" placeholder="请输入密码">
         <button>登录</button>
     </div>
+    <div class="box21" id="box21">分类
+        <div class="box22">
+            <ul class="list1">
+                <li><a href="#">第一个</a></li>
+                <li><a href="#">第二个</a></li>
+                <li><a href="#">第三个</a></li>
+            </ul>
+        </div>
+
+    </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        var search = document.querySelector('#search');
-        // var flag = 0;
-        search.onfocus = function () {
-            this.style.color = '#333';
-            if (this.value === '手机') {
-                this.value = '';
-            }
-        }
-        search.onblur = function () {
-            this.style.color = '#ccc';
-            if (this.value === '') {
-                this.value = '手机';
-            }
-        }
-        var box1 = document.querySelector('.box1');
-        box1.onclick = function () {
-            this.className = 'box1Change';
-            box1.innerHTML = '样式已更改';
-        }
-
-        // ----------------------------------------------------------
-        // 另一个案例的 js
-        var ipt = document.querySelector(".ipt");
-        var message = document.querySelector(".message");
-        ipt.onblur = function () {
-            if (this.value.length < 6 || this.value.length > 16) {
-                message.className = "message wrong";
-                message.innerHTML = "请输入6-16位密码"
-            } else {
-                message.innerHTML = "您输入的格式正确"
-                message.className = "message right";
-            }
-        }
-        // 下面的这些是作业==========================================
-        var flag = 0;
-        var kaiguan = document.querySelector(".kaiguan");
-        var ipt1 = document.querySelector('.ipt1');
-        var ipt2 = document.querySelector('.ipt2');
-        kaiguan.onclick = function () {
-            if (flag == 0) {
-                document.body.style.backgroundColor = 'gray';
-                this.innerHTML = "开灯"
-                flag = 1;
-            } else {
-                document.body.style.backgroundColor = 'white';
-                this.innerHTML = "关灯"
-                flag = 0;
-
-            }
-        }
-        ipt1.onfocus = function () {
-            if (this.value !== "") {
-                this.value = "";
-            }
-            this.style.borderColor = 'pink';
-        }
-        ipt1.onblur = function () {
-            if (this.value === "") {
-                this.value = "请输入用户名"
-            }
-            this.style.borderColor = 'black';
-
-        }
-        ipt2.onfocus = function () {
-            this.placeholder = "";
-        }
-        ipt2.onblur = function () {
-            if (this.value == "") {
-                this.placeholder = "请输入密码"
-            }
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
