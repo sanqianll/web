@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh- CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script language="javascript" type="text/javascript">
+        function doPrint(oper) {
+            bdhtml = window.document.body.innerHTML; //获取当前页的html代码
+            sprnstr = "<!--startprint" + oper + "-->"; //设置打印开始区域
+            eprnstr = "<!--endprint" + oper + "-->"; //设置打印结束区域
+            prnhtml = bdhtml.substr(bdhtml.indexOf(sprnstr) + 17); //从开始代码向后取html
+            prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr)); //从结束代码向前取html
+            window.document.body.innerHTML = prnhtml;
+            window.print();
+        }
+    </script>
+
+</head>
+
+<body>
+    <button class="btns">
+        <!-- <a href="http://www.bilibili.com">B站</a> -->
+        B站
+    </button>
+    <button class="btns">按钮2</button>
+    <button class="btns">按钮3</button>
+    <button class="btns" onclick="javascript:doPrint(oper)">按钮4</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
