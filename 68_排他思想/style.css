@@ -1,13 +1,70 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
 }
 
 button {
     border: 1px solid gray;
 }
 
-.btns{
+.btns {
     width: 50px;
     height: 30px;
+}
+
+.baidu{
+    display: block;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+.baidu li {
+    float: left;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.baidu li img {
+    width: 100px;
+    height: 70px;
+}
+
+
+table {
+    width: 800px;
+    margin: 100px auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead tr {
+    height: 30px;
+    background-color: skyblue;
+}
+
+tbody tr {
+    height: 30px;
+}
+
+tbody td {
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 12px;
+    color: blue;
+}
+
+.bg {
+    background-color: pink;
+}
+
+footer{
+    width: 500px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: blanchedalmond;
 }
