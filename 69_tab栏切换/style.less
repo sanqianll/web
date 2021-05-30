@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.tab {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+
+    .tab_list {
+        ul {
+            width: 1000px;
+            height: 50px;
+            background-color: #eee;
+            border-bottom: 1px solid red;
+
+            li {
+                color: black;
+                float: left;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+
+            .current {
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+
+    .tab_con {
+        .items {
+            display: none;
+        }
+        .items:nth-child(1){
+            display: block;
+        }
+    }
+}
