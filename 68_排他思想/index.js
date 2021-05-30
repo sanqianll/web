@@ -67,6 +67,7 @@ for (var i = 0; i < j_tbs.length; i++) {
         j_cball.checked = flag;
     }
 }
+// 选择最后面的footer标签
 var footer = document.querySelector('#footer');
 
 console.log(footer.id);
