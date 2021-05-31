@@ -1,5 +1,5 @@
 var tab_list = document.querySelector('.tab_list');
-var list = document.querySelectorAll('li');
+var list = tab_list.querySelectorAll('li');
 var items = document.querySelectorAll('.items');
 for (var i = 0; i < list.length; i++) {
     // 对每个list都加上一个index属性
@@ -22,3 +22,7 @@ for (var i = 0; i < list.length; i++) {
         items[index].style.display = 'block';
     }
 }
+
+var at=document.querySelector('.at');
+console.log(at.getAttribute('atlc'));//通过getAttribute才能获取属性内容
+console.log(at.dataset.atlc);
