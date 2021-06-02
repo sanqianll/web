@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style: none;
+}
+.nav > li {
+  text-align: center;
+  float: left;
+}
+.nav > li > a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+}
+.nav > li > a:hover {
+  background-color: #ccc;
+}
+.nav > li ul {
+  display: none;
+  border-left: 1px solid tomato;
+  border-right: 1px solid tomato;
+}
+.nav > li ul li {
+  border-bottom: 1px solid tomato;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+}
+.nav > li ul li:hover {
+  background-color: #ccc;
+}
