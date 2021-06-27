@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  width: 500px;
+  margin: 100px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+table td,
+table th {
+  border: 1px solid #333;
+}
+table thead tr {
+  height: 40px;
+  background-color: #ccc;
+}
