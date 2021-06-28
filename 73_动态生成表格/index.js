@@ -37,8 +37,25 @@ for (var i = 0; i < datas.length; i++) {
     tr.appendChild(td);
 }
 var del = document.querySelectorAll('.del');
-for (var i = 0; del.length; i++) {
+for (var i = 0; i < del.length; i++) {
     del[i].onclick = function () {
         tbody.removeChild(this.parentElement.parentElement);
     }
+}
+var btns = document.querySelectorAll('button');
+//传统注册事件
+btns[0].onclick = function () {
+    alert('用传统方式做的弹窗');
+}
+// 方法监听注册方式
+btns[1].addEventListener('click', function () {
+    alert('方法监听注册的事件');
+})
+
+// 删除事件
+btns[2].addEventListener('click', fn);
+
+function fn() {
+    alert("出现了，是弹窗!");
+    btns[2].removeEventListener('click', fn);
 }
