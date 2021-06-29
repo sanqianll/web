@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+</head>
+
+<body>
+    <label for="">用户名</label>
+    <form action="index.html">
+        <input type="text" name="uname" id="">
+        <input type="submit" value="提交">
+    </form>
+
+    <button class="bt1">assign重定向页面</button>
+    <button class="bt2">replace替换当前页面</button>
+    <button class="bt3">reload刷新页面</button>
+    <script>
+        window.addEventListener('load', function () {
+
+            var bt1 = document.querySelector('.bt1');
+            var bt2 = document.querySelector('.bt2');
+            var bt3 = document.querySelector('.bt3');
+
+            bt1.addEventListener('click', function () {
+                location.assign('http://www.bilibili.com');
+            });
+            bt2.addEventListener('click', function () {
+                location.replace('http://www.baidu.com');
+            });
+            bt3.addEventListener('click', function () {
+                location.reload();
+            });
+        })
+    </script>
+</body>
+
+</html>
