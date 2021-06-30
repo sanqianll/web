@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset系列</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="father"></div>
+    <div class="gzt"></div>
+
+
+    <!-- 下面是模态框 -->
+    <div class="login-header"><a id="link" href="javascript:;">点击，弹出登录框</a></div>
+    <div id="login" class="login">
+        <div id="title" class="login-title">普通的登录页面
+            <span><a id="closeBtn" href="javascript:void(0);" class="close-login">关闭</a></span>
+        </div>
+        <div class="login-input-content">
+            <div class="login-input">
+                <label>用户名：</label>
+                <input type="text" placeholder="请输入用户名" name="info[username]" id="username" class="list-input">
+            </div>
+            <div class="login-input">
+                <label>登录密码：</label>
+                <input type="password" placeholder="请输入登录密码" name="info[password]" id="password" class="list-input">
+            </div>
+        </div>
+        <div id="loginBtn" class="login-button"><a href="javascript:void(0);" id="login-button-submit">登录</a></div>
+    </div>
+    <!-- 遮盖层 -->
+    <div id="bg" class="login-bg"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
