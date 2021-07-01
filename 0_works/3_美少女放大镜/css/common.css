@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.w {
+  margin: 0 auto;
+  width: 1000px;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  border-bottom: 2px solid #dd6075;
+}
+.header .logo {
+  color: #d142d1;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header .logo img {
+  width: 100px;
+}
+.footer {
+  border-top: 2px solid #dd6075;
+  padding-top: 57px;
+  background-color: #fff;
+  height: 100px;
+}
+.footer div {
+  font-size: 24px;
+  color: #333;
+}
+.footer div img {
+  width: 50px;
+  vertical-align: middle;
+}
+.footer div button {
+  margin-left: 20px;
+  width: 60px;
+  height: 40px;
+  font-size: 16px;
+}

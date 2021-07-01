@@ -1,0 +1,54 @@
+.back {
+  position: absolute;
+  display: block;
+  top: 56px;
+  left: 100px;
+  color: white;
+  background-color: #dd6075;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+}
+.main {
+  margin-top: 20px;
+  height: 650px;
+}
+.main .kuang {
+  position: relative;
+  width: 400px;
+}
+.main .kuang .preimg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.main .kuang .mask {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  border-radius: 10%;
+  background-color: rgba(245, 196, 63, 0.3);
+  cursor: move;
+}
+.main .kuang .big {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 420px;
+  width: 584px;
+  height: 584px;
+  border-radius: 10%;
+  background-color: yellowgreen;
+}
+.main .kuang .big .bigImg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
